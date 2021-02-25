@@ -1,5 +1,4 @@
-import { act } from 'react-dom/test-utils';
-import { createStore } from 'redux'
+import { createStore, combineReducers } from 'redux';
 
 // Expense Reducer
 const expenseReducerDefaultState = [];
@@ -28,4 +27,11 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
 
 // Store creation
 
-const store = createStore()
+const store = createStore(
+    combineReducers({
+        expenses: expenseReducer,
+        filters: filtersReducer
+    })
+)
+
+console.log(store.getState())
