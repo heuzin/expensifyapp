@@ -1,6 +1,13 @@
 import React from 'react';
 
 class ExpenseForm extends React.Component {
+    state = {
+        description: ''
+    }
+    onDescriptionChange = (e) => {
+        const description = e.target.value
+        this.setState(() => ({ description }))
+    }
     render() {
         return (
             <div>
@@ -9,6 +16,8 @@ class ExpenseForm extends React.Component {
                         type='text'
                         placeholder='Description'
                         autoFocus
+                        value={this.state.description}
+                        onChange={this.onDescriptionChange}
                     />
                     <input 
                         type='number'
