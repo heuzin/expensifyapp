@@ -5,14 +5,14 @@ import { setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate } fro
 
 class ExpenseListFilters extends React.Component {
     state = {
-        calenderFocused: null
+        calendarFocused: null
     };
     onDatesChange = ({ startDate, endDate }) => {
         this.props.dispatch(setStartDate(startDate));
         this.props.dispatch(setEndDate(endDate));
     };
-    onFocusChange = (calenderFocused) => {
-        this.setState(() => ({ calenderFocused }))
+    onFocusChange = (calendarFocused) => {
+        this.setState(() => ({ calendarFocused }))
     };
     render() {
         return (
@@ -41,7 +41,7 @@ class ExpenseListFilters extends React.Component {
                     startDate={this.props.filters.startDate}
                     endDate={this.props.filters.endDate}
                     onDatesChange={this.onDatesChange}
-                    focusedInput={this.state.calenderFocused}
+                    focusedInput={this.state.calendarFocused}
                     onFocusChange={this.onFocusChange}
                     showClearDates={true}
                     numberOfMonths={1}

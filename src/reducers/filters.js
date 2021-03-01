@@ -25,7 +25,7 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
                 ...state,
                 sortBy: 'date'
             }
-        case 'SET_STAR_DATE':
+        case 'SET_START_DATE':
             return {
                 ...state,
                 startDate: action.startDate
