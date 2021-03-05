@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 import './styles/styles.scss';
 import './firebase/firebase'
+import { startSetExpenses } from './actions/expenses';
 
 const store = configureStore()
 
@@ -14,6 +15,13 @@ const jsx = (
 )
 
 ReactDOM.render(
-  jsx,
+  <p>Loading...</p>,
   document.getElementById('root')
 );
+
+store.dispatch(startSetExpenses()).then() {
+  ReactDOM.render(
+    jsx,
+    document.getElementById('root')
+  );
+}
