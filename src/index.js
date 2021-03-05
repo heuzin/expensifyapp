@@ -19,9 +19,9 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-store.dispatch(startSetExpenses()).then() {
+store.dispatch(startSetExpenses()).then(() => {
   ReactDOM.render(
     jsx,
     document.getElementById('root')
   );
-}
+})
