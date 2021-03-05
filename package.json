@@ -12,7 +12,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "firebase": "^8.2.9",
-    "history": "^5.0.0",
+    "history": "^4.7.2",
     "loader": "^2.1.1",
     "moment": "^2.29.1",
     "node-sass": "^5.0.0",
