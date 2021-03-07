@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { startLogin } from '../actions/auth';
 
 const LoginPage = ({ startLogin }) => (
-    <div className="box-layout">
+    <div className='box-layout' style={{ backgroundImage: "url(/images/bg.jpg)" }}>
         <button onClick={startLogin}>Login</button>
     </div>
 )
