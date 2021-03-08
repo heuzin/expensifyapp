@@ -48,7 +48,7 @@ class ExpenseListFilters extends React.Component {
                         </select>
                     </div>
                     <div className='input-group__item'>
-                        <DateRangePicker 
+                        <DateRangePicker
                             startDate={this.props.filters.startDate}
                             startDateId='startDate'
                             endDate={this.props.filters.endDate}
