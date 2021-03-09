@@ -1,4 +1,7 @@
 import ReactDOM from 'react-dom';
+import 'react-app-polyfill/ie9';
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
 import AppRouter, { history } from './routers/AppRouter';
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
